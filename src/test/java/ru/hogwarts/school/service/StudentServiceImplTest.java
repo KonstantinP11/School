@@ -20,7 +20,7 @@ class StudentServiceImplTest {
     @Test
     void getStudent_shouldReturnStudent() {
         underTest.addStudent(student);
-        Student result = underTest.getStudent(1L);
+        Optional<Student> result = underTest.getStudent(1L);
         assertEquals(student, result);
     }
 
