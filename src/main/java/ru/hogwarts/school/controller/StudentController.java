@@ -23,8 +23,7 @@ public class StudentController {
 
     @GetMapping("/{id}")
     public Student read(@PathVariable long id) {
-//        return studentService.getStudent(id);
-        return null;
+        return studentService.getStudent(id);
     }
 
     @PutMapping
